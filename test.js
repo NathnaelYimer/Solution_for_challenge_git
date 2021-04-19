@@ -25,6 +25,7 @@ tape('should respond user-agent', (t) => {
   });
 });
 
+
 tape('should respond b64', (t) => {
   jsonist.get(`${urlBase}/b64/hello`, (err, body) => {
     if (err) t.error(err);
@@ -34,6 +35,7 @@ tape('should respond b64', (t) => {
   });
 });
 
+ 
 tape('cleanup', function (t) {
   server.close();
   t.end();
